@@ -28,7 +28,12 @@ $(document).ready(function(){
 	$img.on('click', function(){
 		$(this).toggleClass('image-size');
 	});
-
+	
+	var $h1 = $('h1');
+	$h1.on('click', function(){
+		$(this).pinkify().fadeOut(700).fadeIn(700);
+	})
+	
 	});
 
 });
